@@ -501,6 +501,8 @@
   align-items: center;
   justify-content: center;
   color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.content: center;
+  color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
   overflow: hidden;
 }
@@ -1066,15 +1068,6 @@
   z-index: 2;
 }
 
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
 @media print {
   .securityBanner,
   .aiCodeBanner {
@@ -1366,9 +1359,13 @@
   outline-offset: -2px;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+.formControl {
+  /* You can add any general styles for the wrapper here */
+}
+
+.formControl input:focus,
+.formControl select:focus,
+.formControl textarea:focus {
   outline: 2px solid #4299e1;
   outline-offset: 2px;
 }
