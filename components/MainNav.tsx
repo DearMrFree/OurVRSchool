@@ -16,6 +16,11 @@ import { VRSchoolLogo } from "./TranscriptLogos"
 
 const academics = [
   {
+    title: "MIT Coursework Pathway",
+    href: "/mit",
+    description: "MIT OpenCourseWare, SofAI coaching, and portfolio evidence for college-ready rigor.",
+  },
+  {
     title: "Virtual Classrooms",
     href: "https://cvc.edu/",
     description: "Experience immersive learning environments with world-class instructors.",
@@ -168,6 +173,13 @@ export function MainNav() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
+              <Link href="/mit" legacyBehavior passHref>
+                <NavigationMenuLink className="inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-vrGold hover:text-white hover:bg-vrOrange transition-colors">
+                  MIT
+                </NavigationMenuLink>
+              </Link>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
               <Link href="/" legacyBehavior passHref>
                 <NavigationMenuLink className="inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-white hover:text-vrGold hover:bg-vrGold/10 transition-colors">
                   Admission
@@ -217,4 +229,3 @@ const ListItem = React.forwardRef<React.ElementRef<"a">, React.ComponentPropsWit
   },
 )
 ListItem.displayName = "ListItem"
-
